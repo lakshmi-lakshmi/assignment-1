@@ -1,7 +1,7 @@
 )#include <stdio.h>
 #include <string.h>
 
-#define MAX_BOOKS 100 // maximum number of books in the library
+#define MAX_BOOKS 100 
 
 struct Book {
     char title[100];
@@ -24,10 +24,10 @@ void add_book(struct Library *lib) {
     struct Book new_book;
 
     printf("Enter book title: ");
-    scanf("%99s", new_book.title); // limit input to 99 characters to avoid buffer overflow
+    scanf("%99s", new_book.title); 
 
     printf("Enter author name: ");
-    scanf("%49s", new_book.author); // limit input to 49 characters to avoid buffer overflow
+    scanf("%49s", new_book.author); 
 
     printf("Enter year published: ");
     scanf("%d", &new_book.year_published);
