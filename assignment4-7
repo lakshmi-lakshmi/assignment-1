@@ -44,7 +44,7 @@ int main() {
         scanf("%d", &students[i].roll_no);
 
         printf("Enter student name: ");
-        scanf("%49s", students[i].stud_name); // limit input to 49 characters to avoid buffer overflow
+        scanf("%49s", students[i].stud_name); 
 
         printf("Enter marks for 3 subjects:\n");
         scanf("%d %d %d", &students[i].mark1, &students[i].mark2, &students[i].mark3);
