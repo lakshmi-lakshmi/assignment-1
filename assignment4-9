@@ -14,7 +14,7 @@ int main() {
 
     printf("Enter the student's name: ");
     fgets(s.name, MAX_NAME_LENGTH, stdin);
-    s.name[strcspn(s.name, "\n")] = '\0'; // remove trailing newline
+    s.name[strcspn(s.name, "\n")] = '\0'; 
 
     printf("Enter the student's GPA: ");
     scanf("%f", &gpa);
